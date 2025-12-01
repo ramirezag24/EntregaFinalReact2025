@@ -1,11 +1,12 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useCart } from "../context/CartContext";
+import { useNavigate } from "react-router-dom";
 
 export default function DetalleProductoML({ getProduct }) {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
-
+ const navigate = useNavigate();
   const { addToCart } = useCart(); // ← se conecta a tu carrito
 
   useEffect(() => {
@@ -58,6 +59,12 @@ export default function DetalleProductoML({ getProduct }) {
             >
               Agregar al carrito
             </button>
+            <button
+         onClick={() => navigate("/")}
+        className="mt-4 bg-gray-200 text-gray-800 px-4 py-2 rounded-xl hover:bg-gray-300 transition"
+        >
+        ← Volver al inicio
+        </button>
 
           </div>
         </div>
