@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import MainLayout from "./layouts/MainLayout";
 import AuthLayout from "./layouts/AuthLayout";
 import DetalleProductoML from "./pages/DetalleProductoML";
+import SearchResults from "./pages/SearchResults";
 
 
 import Home from "./pages/Home";
@@ -89,6 +90,10 @@ export default function App() {
       </MainLayout>
     </AdminRoute>
   }
+/>
+<Route
+  path="/search"
+  element={<SearchResults getProducts={getProducts} />}
 />
 
 

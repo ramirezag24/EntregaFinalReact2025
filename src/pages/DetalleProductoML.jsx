@@ -7,7 +7,7 @@ export default function DetalleProductoML({ getProduct }) {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
  const navigate = useNavigate();
-  const { addToCart } = useCart(); // ← se conecta a tu carrito
+  const { addToCart } = useCart(); 
 
   useEffect(() => {
     getProduct(id).then((data) => setProduct(data));
@@ -54,7 +54,7 @@ export default function DetalleProductoML({ getProduct }) {
             </button>
 
             <button
-              onClick={() => addToCart(product)} // ← FUNCIONA CON TU CART
+              onClick={() => addToCart(product)} 
               className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 py-4 rounded-xl font-semibold text-lg shadow transition"
             >
               Agregar al carrito
