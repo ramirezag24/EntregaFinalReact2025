@@ -1,0 +1,171 @@
+/* WRAPPER PRINCIPAL */
+.ml-wrapper {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: #f5f5f5;
+}
+
+/* SIDEBAR */
+.ml-sidebar {
+  width: 260px;
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  height: fit-content;
+}
+
+.ml-title {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.ml-filter-box {
+  margin-bottom: 20px;
+}
+
+.ml-filter-title {
+  font-size: 15px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+/* INPUTS */
+.ml-input {
+  width: 100%;
+  padding: 7px;
+  margin-bottom: 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* LIST */
+.ml-list {
+  padding-left: 20px;
+}
+
+.ml-list li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* SWITCH */
+.ml-switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.ml-switch input {
+  display: none;
+}
+
+.ml-slider {
+  position: absolute;
+  cursor: pointer;
+  background: #ccc;
+  border-radius: 20px;
+  inset: 0;
+  transition: 0.3s;
+}
+
+.ml-slider:before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: 0.3s;
+}
+
+.ml-switch input:checked + .ml-slider {
+  background: #2ecc71;
+}
+
+.ml-switch input:checked + .ml-slider:before {
+  transform: translateX(20px);
+}
+
+/* PRODUCT GRID */
+.ml-products-container {
+  flex: 1;
+}
+
+.ml-header {
+  margin-bottom: 15px;
+}
+
+/* PRODUCT CARD */
+.ml-product-card {
+  display: flex;
+  background: white;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.ml-product-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 15px;
+}
+
+.ml-product-info {
+  flex: 1;
+}
+
+/* TITLE */
+.ml-product-name {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+/* PRICE */
+.ml-price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* FREE SHIPPING */
+.ml-free {
+  color: #00a650;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* DESCRIPTION */
+.ml-desc {
+  font-size: 14px;
+  color: #555;
+}
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+  .ml-wrapper {
+    flex-direction: column;
+  }
+
+  .ml-sidebar {
+    width: 100%;
+  }
+
+  .ml-product-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ml-product-img {
+    margin: 0 auto 15px auto;
+  }
+}

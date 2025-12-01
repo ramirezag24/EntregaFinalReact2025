@@ -1,0 +1,152 @@
+/* WRAPPER PRINCIPAL */
+.mlp-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 30px;
+  padding: 30px;
+  background: #f5f5f5;
+}
+
+/* ========== LEFT IMAGES ========== */
+.mlp-gallery {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.mlp-main-img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* ========== RIGHT INFO ========== */
+.mlp-info {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.mlp-status {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.mlp-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.mlp-price {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.mlp-cuotas {
+  color: #00a650;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.mlp-envio {
+  color: #00a650;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.mlp-stock {
+  color: #333;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+/* BOTONES */
+.mlp-buy-btn,
+.mlp-cart-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.mlp-buy-btn {
+  background: #3483fa;
+  color: white;
+}
+
+.mlp-cart-btn {
+  background: #e3edf8;
+  color: #3483fa;
+}
+
+.mlp-benefits {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* ========== DESCRIPTION ========== */
+.mlp-description-box {
+  grid-column: span 2;
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.mlp-subtitle {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.mlp-description {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #444;
+}
+
+/* ========== SELLER ========== */
+.mlp-vendedor-box {
+  grid-column: span 2;
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.mlp-vendedor {
+  display: flex;
+  gap: 20px;
+}
+
+.mlp-vendedor-nombre {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.mlp-vendedor-estado {
+  color: #00a650;
+  font-size: 14px;
+}
+
+.mlp-vendedor-loc {
+  font-size: 14px;
+  color: #555;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .mlp-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .mlp-description-box,
+  .mlp-vendedor-box {
+    grid-column: span 1;
+  }
+}
