@@ -1,20 +1,20 @@
 import { Link } from "react-router-dom";
-import { useCart } from "../context/CartContext"; // <-- importa tu contexto
+import { useCart } from "../context/CartContext"; 
 
 export default function ProductCard({ product }) {
 
-  const { addToCart } = useCart(); // <-- obtener función del contexto
+  const { addToCart } = useCart(); 
 
   return (
     <div className="bg-white rounded-2xl shadow hover:shadow-lg p-4 transition border border-gray-100">
       <img
         src={product.image}
-        alt={product.title}
+        alt={product.name}
         className="h-48 w-full object-contain mb-4"
       />
 
       <h2 className="font-semibold text-gray-900 text-lg line-clamp-2">
-        {product.title}
+        {product.name}
       </h2>
 
       <p className="text-primary font-bold text-xl mt-2">
