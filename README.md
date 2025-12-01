@@ -1,0 +1,41 @@
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## React Compiler
+
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+# eCommerce App (MockAPI)
+
+## Instalación
+npm install
+npm install react-router-dom react-icons react-toastify
+# si usás Tailwind: seguir configuración oficial
+
+npm run dev
+
+## Endpoints (MockAPI)
+BASE: https://68cc450c716562cf5077160b.mockapi.io/
+- Productos: /product
+- Usuarios: /usuarios
+
+## Credenciales demo
+- Admin: registrar con role=admin en /register
+- Cliente: registrar con role=client o usar role default
+
+## Notas
+- Admin puede CRUD en /admin
+- Cliente solo puede agregar al carrito
+- Sesión persistida en localStorage
+
